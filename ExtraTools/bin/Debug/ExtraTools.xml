@@ -19,10 +19,6 @@ ExtraTools
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
-</member><member name="T:ExtraTools.extratoolsDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
 </member>
 </members>
 </doc>

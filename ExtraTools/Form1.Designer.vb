@@ -25,18 +25,16 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CustomerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SupplierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PurchasesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MantisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EshopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NEMO2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ItemsToolStripMenuItem, Me.CustomerToolStripMenuItem, Me.SupplierToolStripMenuItem, Me.PurchasesToolStripMenuItem, Me.SalesToolStripMenuItem, Me.MantisToolStripMenuItem, Me.EshopToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ItemsToolStripMenuItem, Me.SalesToolStripMenuItem, Me.MantisToolStripMenuItem, Me.EshopToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1262, 24)
@@ -51,33 +49,16 @@ Partial Class Form1
         '
         'ItemsToolStripMenuItem
         '
+        Me.ItemsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NEMO2ToolStripMenuItem})
         Me.ItemsToolStripMenuItem.Name = "ItemsToolStripMenuItem"
         Me.ItemsToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
         Me.ItemsToolStripMenuItem.Text = "Αποθήκη"
         '
-        'CustomerToolStripMenuItem
-        '
-        Me.CustomerToolStripMenuItem.Name = "CustomerToolStripMenuItem"
-        Me.CustomerToolStripMenuItem.Size = New System.Drawing.Size(63, 20)
-        Me.CustomerToolStripMenuItem.Text = "Πελάτες"
-        '
-        'SupplierToolStripMenuItem
-        '
-        Me.SupplierToolStripMenuItem.Name = "SupplierToolStripMenuItem"
-        Me.SupplierToolStripMenuItem.Size = New System.Drawing.Size(92, 20)
-        Me.SupplierToolStripMenuItem.Text = "Προμηθευτές"
-        '
-        'PurchasesToolStripMenuItem
-        '
-        Me.PurchasesToolStripMenuItem.Name = "PurchasesToolStripMenuItem"
-        Me.PurchasesToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
-        Me.PurchasesToolStripMenuItem.Text = "Αγορές"
-        '
         'SalesToolStripMenuItem
         '
         Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
-        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
-        Me.SalesToolStripMenuItem.Text = "Πωλήσεις"
+        Me.SalesToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
+        Me.SalesToolStripMenuItem.Text = "Exports"
         '
         'MantisToolStripMenuItem
         '
@@ -91,12 +72,19 @@ Partial Class Form1
         Me.EshopToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
         Me.EshopToolStripMenuItem.Text = "E-shop"
         '
+        'NEMO2ToolStripMenuItem
+        '
+        Me.NEMO2ToolStripMenuItem.Name = "NEMO2ToolStripMenuItem"
+        Me.NEMO2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NEMO2ToolStripMenuItem.Text = "NEMO 2"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1262, 529)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Extra Tools"
@@ -109,11 +97,16 @@ Partial Class Form1
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents StartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ItemsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents CustomerToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents SupplierToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PurchasesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SalesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MantisToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EshopToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents NEMO2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
+    Protected Sub MDIChildNew_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NEMO2ToolStripMenuItem.Click
+        Dim NewMDIChild As New Form2()
+        'Set the Parent Form of the Child window.
+        NewMDIChild.MdiParent = Me
+        'Display the new form.
+        NewMDIChild.Show()
+    End Sub
 End Class
