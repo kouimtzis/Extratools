@@ -64,6 +64,17 @@ Namespace My
                 Return CType(Me("extratoolsConnectionString"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MORFEAS;Initial Catalog=koyimtzisBK;Persist Security Info=True;User I"& _ 
+            "D=sa;Password=123")>  _
+        Public ReadOnly Property koyimtzisBKConnectionString() As String
+            Get
+                Return CType(Me("koyimtzisBKConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
