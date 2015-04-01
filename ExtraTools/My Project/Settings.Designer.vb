@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MORFEAS;Initial Catalog=extratools;User ID=sa;Password=123;Pooling=Fa"& _ 
-            "lse")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.20.10.3;Initial Catalog=extratools;Persist Security Info=True;Use"& _ 
+            "r ID=sa;Password=123")>  _
         Public ReadOnly Property extratoolsConnectionString() As String
             Get
                 Return CType(Me("extratoolsConnectionString"),String)
@@ -68,11 +68,22 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=MORFEAS;Initial Catalog=koyimtzisBK;Persist Security Info=True;User I"& _ 
-            "D=sa;Password=123")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;Persist Security Info=True;Us"& _ 
+            "er ID=sa;Password=123")>  _
         Public ReadOnly Property koyimtzisBKConnectionString() As String
             Get
                 Return CType(Me("koyimtzisBKConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.20.10.3;Initial Catalog=LVisionBK;Persist Security Info=True;User"& _ 
+            " ID=sa;Password=123")>  _
+        Public ReadOnly Property LVisionBKConnectionString() As String
+            Get
+                Return CType(Me("LVisionBKConnectionString"),String)
             End Get
         End Property
     End Class

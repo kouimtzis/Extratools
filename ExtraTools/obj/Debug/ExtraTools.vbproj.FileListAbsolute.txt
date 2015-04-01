@@ -9,3 +9,4 @@ C:\Users\pm\Documents\Visual Studio 2013\Projects\extratools\ExtraTools\obj\Debu
 C:\Users\pm\Documents\Visual Studio 2013\Projects\extratools\ExtraTools\obj\Debug\ExtraTools.exe
 C:\Users\pm\Documents\Visual Studio 2013\Projects\extratools\ExtraTools\obj\Debug\ExtraTools.xml
 C:\Users\pm\Documents\Visual Studio 2013\Projects\extratools\ExtraTools\obj\Debug\ExtraTools.pdb
+C:\Users\pm\Documents\Visual Studio 2013\Projects\extratools\ExtraTools\obj\Debug\ExtraTools.vbprojResolveAssemblyReference.cache

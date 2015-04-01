@@ -25,16 +25,17 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.StartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ItemsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NEMO2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MantisToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EshopToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NEMO2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ΟργάνωσηToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ItemsToolStripMenuItem, Me.SalesToolStripMenuItem, Me.MantisToolStripMenuItem, Me.EshopToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StartToolStripMenuItem, Me.ItemsToolStripMenuItem, Me.SalesToolStripMenuItem, Me.MantisToolStripMenuItem, Me.EshopToolStripMenuItem, Me.ΟργάνωσηToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1262, 24)
@@ -54,6 +55,12 @@ Partial Class Form1
         Me.ItemsToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
         Me.ItemsToolStripMenuItem.Text = "Αποθήκη"
         '
+        'NEMO2ToolStripMenuItem
+        '
+        Me.NEMO2ToolStripMenuItem.Name = "NEMO2ToolStripMenuItem"
+        Me.NEMO2ToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
+        Me.NEMO2ToolStripMenuItem.Text = "NEMO 2"
+        '
         'SalesToolStripMenuItem
         '
         Me.SalesToolStripMenuItem.Name = "SalesToolStripMenuItem"
@@ -72,11 +79,11 @@ Partial Class Form1
         Me.EshopToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
         Me.EshopToolStripMenuItem.Text = "E-shop"
         '
-        'NEMO2ToolStripMenuItem
+        'ΟργάνωσηToolStripMenuItem
         '
-        Me.NEMO2ToolStripMenuItem.Name = "NEMO2ToolStripMenuItem"
-        Me.NEMO2ToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.NEMO2ToolStripMenuItem.Text = "NEMO 2"
+        Me.ΟργάνωσηToolStripMenuItem.Name = "ΟργάνωσηToolStripMenuItem"
+        Me.ΟργάνωσηToolStripMenuItem.Size = New System.Drawing.Size(79, 20)
+        Me.ΟργάνωσηToolStripMenuItem.Text = "Οργάνωση"
         '
         'Form1
         '
@@ -109,4 +116,5 @@ Partial Class Form1
         'Display the new form.
         NewMDIChild.Show()
     End Sub
+    Friend WithEvents ΟργάνωσηToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

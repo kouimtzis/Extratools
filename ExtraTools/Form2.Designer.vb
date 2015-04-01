@@ -22,6 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,7 +34,6 @@ Partial Class Form2
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
         '
         'RichTextBox1
         '
@@ -64,6 +64,7 @@ Partial Class Form2
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 2
+        Me.TextBox1.Text = "*"
         '
         'Label2
         '
@@ -89,6 +90,7 @@ Partial Class Form2
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 4
+        Me.TextBox2.Text = "*"
         '
         'Label4
         '
@@ -105,12 +107,13 @@ Partial Class Form2
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 6
+        Me.TextBox3.Text = "*"
         '
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(15, 122)
+        Me.Button1.Location = New System.Drawing.Point(132, 122)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(90, 39)
         Me.Button1.TabIndex = 8
@@ -121,7 +124,7 @@ Partial Class Form2
         'Button2
         '
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(122, 122)
+        Me.Button2.Location = New System.Drawing.Point(16, 122)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(100, 39)
         Me.Button2.TabIndex = 9
@@ -147,8 +150,7 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.Text = "NEMO 2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        
 
     End Sub
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
@@ -161,4 +163,5 @@ Partial Class Form2
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+
 End Class
