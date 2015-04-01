@@ -2,28 +2,21 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="extratoolsConnectionString" Type="(Connection string)" Scope="Application">
-      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
-&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=192.20.10.3;Initial Catalog=extratools;Persist Security Info=True;User ID=sa;Password=123&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
-&lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=192.20.10.3;Initial Catalog=extratools;Persist Security Info=True;User ID=sa;Password=123</Value>
-    </Setting>
     <Setting Name="koyimtzisBKConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;Persist Security Info=True;User ID=sa;Password=123&lt;/ConnectionString&gt;
-  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+  &lt;ConnectionString&gt;Dsn=kouimtzisBK;description=kouimtzisBK;uid=sa;app=Microsoft® Visual Studio® 2013;wsid=IT;database=koyimtzisBK&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.Odbc&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;Persist Security Info=True;User ID=sa;Password=123</Value>
+      <Value Profile="(Default)">Dsn=kouimtzisBK;description=kouimtzisBK;uid=sa;app=Microsoft® Visual Studio® 2013;wsid=IT;database=koyimtzisBK</Value>
     </Setting>
-    <Setting Name="LVisionBKConnectionString" Type="(Connection string)" Scope="Application">
+    <Setting Name="koyimtzisBKConnectionString1" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=192.20.10.3;Initial Catalog=LVisionBK;Persist Security Info=True;User ID=sa;Password=123&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;User ID=sa;Password=123&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=192.20.10.3;Initial Catalog=LVisionBK;Persist Security Info=True;User ID=sa;Password=123</Value>
+      <Value Profile="(Default)">Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;User ID=sa;Password=123</Value>
     </Setting>
   </Settings>
 </SettingsFile>
