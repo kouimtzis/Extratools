@@ -155,7 +155,7 @@ Partial Class Form2
         Me.DataGridView1.Location = New System.Drawing.Point(293, 37)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(514, 124)
+        Me.DataGridView1.Size = New System.Drawing.Size(512, 124)
         Me.DataGridView1.TabIndex = 10
         '
         'MATERIALBindingSource
