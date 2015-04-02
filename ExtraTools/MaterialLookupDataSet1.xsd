@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MaterialLookupDataSet" targetNamespace="http://tempuri.org/MaterialLookupDataSet1.xsd" xmlns:mstns="http://tempuri.org/MaterialLookupDataSet1.xsd" xmlns="http://tempuri.org/MaterialLookupDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="koyimtzisBKConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="koyimtzisBKConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ExtraTools.My.MySettings.GlobalReference.Default.koyimtzisBKConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MATERIALTableAdapter" GeneratorDataComponentClassName="MATERIALTableAdapter" Name="MATERIAL" UserDataComponentName="MATERIALTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="koyimtzisBKConnectionString (MySettings)" DbObjectName="koyimtzisBK.dbo.MATERIAL" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CODE, DESCRIPTION, zcode FROM dbo.MATERIAL</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODE" DataSetColumn="CODE" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="zcode" DataSetColumn="zcode" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MaterialLookupDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MaterialLookupDataSet" msprop:Generator_UserDSName="MaterialLookupDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MATERIAL" msprop:Generator_TableClassName="MATERIALDataTable" msprop:Generator_TableVarName="tableMATERIAL" msprop:Generator_RowChangedName="MATERIALRowChanged" msprop:Generator_TablePropName="MATERIAL" msprop:Generator_RowDeletingName="MATERIALRowDeleting" msprop:Generator_RowChangingName="MATERIALRowChanging" msprop:Generator_RowEvHandlerName="MATERIALRowChangeEventHandler" msprop:Generator_RowDeletedName="MATERIALRowDeleted" msprop:Generator_RowClassName="MATERIALRow" msprop:Generator_UserTableName="MATERIAL" msprop:Generator_RowEvArgName="MATERIALRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE" msprop:Generator_ColumnVarNameInTable="columnCODE" msprop:Generator_ColumnPropNameInRow="CODE" msprop:Generator_ColumnPropNameInTable="CODEColumn" msprop:Generator_UserColumnName="CODE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_UserColumnName="DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="zcode" msprop:Generator_ColumnVarNameInTable="columnzcode" msprop:Generator_ColumnPropNameInRow="zcode" msprop:Generator_ColumnPropNameInTable="zcodeColumn" msprop:Generator_UserColumnName="zcode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

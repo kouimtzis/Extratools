@@ -57,21 +57,10 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Dsn=kouimtzisBK;description=kouimtzisBK;uid=sa;app=Microsoft® Visual Studio® 2013"& _ 
-            ";wsid=IT;database=koyimtzisBK")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;User ID=sa;Password=123")>  _
         Public ReadOnly Property koyimtzisBKConnectionString() As String
             Get
                 Return CType(Me("koyimtzisBKConnectionString"),String)
-            End Get
-        End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=192.20.10.3;Initial Catalog=koyimtzisBK;User ID=sa;Password=123")>  _
-        Public ReadOnly Property koyimtzisBKConnectionString1() As String
-            Get
-                Return CType(Me("koyimtzisBKConnectionString1"),String)
             End Get
         End Property
     End Class

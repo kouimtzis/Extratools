@@ -22,6 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -33,6 +34,16 @@ Partial Class Form2
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.MATERIALBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MaterialLookupDataSet = New ExtraTools.MaterialLookupDataSet()
+        Me.MATERIALTableAdapter = New ExtraTools.MaterialLookupDataSetTableAdapters.MATERIALTableAdapter()
+        Me.CODEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DESCRIPTIONDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ZcodeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MATERIALBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MaterialLookupDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'RichTextBox1
@@ -133,11 +144,62 @@ Partial Class Form2
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.CODEDataGridViewTextBoxColumn, Me.DESCRIPTIONDataGridViewTextBoxColumn, Me.ZcodeDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.MATERIALBindingSource
+        Me.DataGridView1.Location = New System.Drawing.Point(293, 37)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(514, 124)
+        Me.DataGridView1.TabIndex = 10
+        '
+        'MATERIALBindingSource
+        '
+        Me.MATERIALBindingSource.DataMember = "MATERIAL"
+        Me.MATERIALBindingSource.DataSource = Me.MaterialLookupDataSet
+        '
+        'MaterialLookupDataSet
+        '
+        Me.MaterialLookupDataSet.DataSetName = "MaterialLookupDataSet"
+        Me.MaterialLookupDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'MATERIALTableAdapter
+        '
+        Me.MATERIALTableAdapter.ClearBeforeFill = True
+        '
+        'CODEDataGridViewTextBoxColumn
+        '
+        Me.CODEDataGridViewTextBoxColumn.DataPropertyName = "CODE"
+        Me.CODEDataGridViewTextBoxColumn.HeaderText = "CODE"
+        Me.CODEDataGridViewTextBoxColumn.Name = "CODEDataGridViewTextBoxColumn"
+        Me.CODEDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DESCRIPTIONDataGridViewTextBoxColumn
+        '
+        Me.DESCRIPTIONDataGridViewTextBoxColumn.DataPropertyName = "DESCRIPTION"
+        Me.DESCRIPTIONDataGridViewTextBoxColumn.HeaderText = "DESCRIPTION"
+        Me.DESCRIPTIONDataGridViewTextBoxColumn.Name = "DESCRIPTIONDataGridViewTextBoxColumn"
+        Me.DESCRIPTIONDataGridViewTextBoxColumn.ReadOnly = True
+        Me.DESCRIPTIONDataGridViewTextBoxColumn.Width = 250
+        '
+        'ZcodeDataGridViewTextBoxColumn
+        '
+        Me.ZcodeDataGridViewTextBoxColumn.DataPropertyName = "zcode"
+        Me.ZcodeDataGridViewTextBoxColumn.HeaderText = "zcode"
+        Me.ZcodeDataGridViewTextBoxColumn.Name = "ZcodeDataGridViewTextBoxColumn"
+        Me.ZcodeDataGridViewTextBoxColumn.ReadOnly = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1267, 602)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -151,6 +213,9 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.Text = "NEMO 2"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MATERIALBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MaterialLookupDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -165,6 +230,14 @@ Partial Class Form2
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents MaterialLookupDataSet As ExtraTools.MaterialLookupDataSet
+    Friend WithEvents MATERIALBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents MATERIALTableAdapter As ExtraTools.MaterialLookupDataSetTableAdapters.MATERIALTableAdapter
+    Friend WithEvents CODEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DESCRIPTIONDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents ZcodeDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+
 
    
 End Class
